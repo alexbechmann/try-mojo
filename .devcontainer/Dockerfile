@@ -54,6 +54,7 @@ RUN set -uex; \
 RUN apt-get update && apt-get install nodejs -y
 
 RUN npm i -g nodemon
+RUN npm i -g foreman
 
 RUN curl -s https://get.modular.com | sh -
 RUN modular install mojo

@@ -21,5 +21,5 @@
 ## Development
 
 ```bash
-make dev
+nf start
 ```

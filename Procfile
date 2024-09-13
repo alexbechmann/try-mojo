@@ -1,0 +1,1 @@
+main: nodemon --exec "magic run mojo ./src/main.mojo" --watch src -e mojo --signal SIGTERM
