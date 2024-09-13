@@ -9,8 +9,3 @@ def main():
 
     x = 1
     print(x)
-
-
-
-fn greet(name: String) -> NoneType:
-    print(f"Hello, {name}!")
