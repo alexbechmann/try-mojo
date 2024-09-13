@@ -3,7 +3,7 @@ authors = ["Alex Bechmann <alex.bechmann@velux.com>"]
 channels = ["conda-forge", "https://conda.modular.com/max"]
 description = "Add a short description here"
 name = "try-mojo"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-aarch64"]
 version = "0.1.0"
 
 [tasks]
