@@ -1,20 +1,25 @@
 from python import Python
+from lib import Person, mark_person, add
 
-def main():
-    pd = Python.import_module("pandas")
 
-    var item = Python.dict()
-    item["item_name"] = "whizbang"
-    item["price"] = 11.75
-    item["inventory"] = 100
+fn main():
+    var x: Int32 = 5
+    var doubled = x * 2
+    var y = add(doubled, 10)
 
-    data = Python.list()
-    data.append(item)
+    print(doubled, y)
 
-    df = pd.DataFrame(data)
+    var person = Person(name="Alice", age=30, marked=False)
+    print(
+        person.name,
+        person.age,
+        person.marked,
+    )
 
-    print(df)
-    print('hello')
+    mark_person(person)
 
-    x = 1
-    print(x)
+    print(
+        person.name,
+        person.age,
+        person.marked,
+    )
